@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -173,62 +174,62 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-01.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-02.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                       <img class="img-fluid" src="img/LP-03.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-04.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-05.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg"  data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-06.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                       <img class="img-fluid" src="img/LP-07.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                       <img class="img-fluid" src="img/LP-08.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                       <img class="img-fluid" src="img/LP-09.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                      <img class="img-fluid" src="img/LP-10.png" alt="scroll-sample-icon">
                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                       <img class="img-fluid" src="img/LP-11.png" alt="scroll-sample-icon">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 scroll-stopbox">
-                    <div class="scroll-stopboximg">
+                    <div class="scroll-stopboximg" data-bs-toggle="modal" data-bs-target="#slider-img">
                        <img class="img-fluid" src="img/LP-12.png" alt="scroll-sample-icon">
                     </div>
                 </div>
@@ -733,9 +734,76 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+        <div class="modal fade" id="slider-img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/Large-size-opened-01.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-02.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-03.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-04.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-05.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-06.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-07.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-08.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-09.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-10.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-11.png" class="d-block w-100" alt="img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Large-size-opened-12.png" class="d-block w-100" alt="img">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                          </span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          </span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            </div>
+        </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
