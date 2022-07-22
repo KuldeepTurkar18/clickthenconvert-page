@@ -26,7 +26,7 @@ body {
     --hawke-blue: #D9DBE1;
     --gray86: #DBDBDB;
     --gray90: #E6E6E6;
-    --footer-clr: #1C427B;
+    --chathams-blue: #1C427B;
 }
 
 h1 {
@@ -353,7 +353,7 @@ label {
 #header .navbar-nav .dropdown-menu .with-us h6 {
     font-size: 0.875rem;
     line-height: 1.313rem;
-    color: #1C427B;
+    color: var(--chathams-blue);
     font-weight: 700;
     margin-bottom: 0.125rem;
 }
@@ -2960,7 +2960,7 @@ nav.page-breadcrumb .breadcrumb-item.active {
 }
 
 .client-speak-slider {
-    background-color: var(--footer-clr);
+    background-color: var(--chathams-blue);
     padding: 6.25rem 0 3.75rem;
     color: var(--white);
 }
@@ -3266,10 +3266,139 @@ nav.page-breadcrumb .breadcrumb-item.active {
     transform: scale(1.2);
 }
 
+/*--- case study css start ---*/
+.casestudy-banner-content img{
+    margin-bottom: 1.25rem;
+}
+.casestudy-banner-content h1{
+    margin-bottom: 2.5rem;
+}
+.casestudy-about-img{
+    position: relative;
+}
+.casestudy-about-img img{
+   position: relative;
+   z-index: 1;
+}
+.casestudy-about-img:after{
+    position: absolute;
+    content: "";
+    top: -1.2rem;
+    right: -1.2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #335588;
+}
+.casestudy-about-content {
+    padding-left: 7.5rem;
+}
+.casestudy-about-content span{
+    color: var(--white);
+}
+.casestudy-about-content h2{
+    color: var(--white);
+    margin-bottom: 1.225rem;
+}
+.casestudy-about-content p{
+    color: #B9CCE8;
+}
+.case-study-about .about-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.casestudy-detail-box h2{
+   margin-bottom: 1.225rem;
+}
+.heading-num{
+    font-size: 1.325rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.heading-num span{
+    width:3.75rem;
+    height: 3.75rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 1.75rem;
+    justify-content: center;
+    background-color: var(--orange-dark);
+    color: var(--white);
+    margin-right: 1rem;
+}
+
+.solution-circle {
+    width: 31.4375rem;
+    height: 31.4375rem;
+    background: #F7E39E;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.result-content{
+    column-count: 3;
+} 
+.result-content .result-block h3 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+.result-content .result-block p {
+    color: #B9CCE8;
+    font-size: 0.85rem;
+}
+.result-content .result-block{
+    margin-bottom: 3.15rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+.result-content .result-block::before {
+    content: "";
+    background-image: url("../img/green-arrow.svg");
+    width: 1.25rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+}
+.result-section .about-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.result-head{
+    z-index: 1;
+}
+.casestudy-detail-box .btn-main{
+    margin-top: 2.5rem;
+}
+.client-review-section p{
+   margin-bottom: 2.25rem;
+}
+.ad-section .id-img-box img{
+    border: 3px solid var(--white);
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.05));
+}
+.chathams-blue-bg{
+    background-color: var(--chathams-blue);
+}
+.tealishblue-bg{
+    background-color: var(--tealishblue);
+}
+
 /* footer css start */
 
 footer .main-footer {
-    background-color: var(--footer-clr);
+    background-color: var(--chathams-blue);
     color: var(--white);
     padding: 6.25rem 0 4.065rem 0;
 }
