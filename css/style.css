@@ -1369,43 +1369,6 @@ label {
     left: 5%;
 }
 
-.country-blocks .gray-bg {
-    background-color: var(--grey-light1);
-    padding: 2.188rem;
-    margin-bottom: 1.875rem;
-}
-
-.country-blocks .gray-bg .paragraph2 {
-    color: #000;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.country-blocks .gray-bg .paragraph2>img {
-    margin-right: 0.875rem;
-}
-
-.country-blocks .gray-bg p:first-of-type {
-    margin: 1.875rem 0 1.25rem;
-}
-
-.country-blocks .gray-bg .link {
-    margin-top: 3.75rem;
-}
-
-.country-blocks .gray-bg .link:hover:after {
-    margin-left: 1.25rem;
-}
-
-.country-blocks .gray-bg .link::after {
-    content: "\2192";
-    font-size: 2.188rem;
-    margin-left: 0.625rem;
-    position: relative;
-    top: 0.25rem;
-    transition: all 0.3s ease-in-out;
-}
-
 /*------careers-page-css------------*/
 .careers-banner .service-list-icon3 {
     position: absolute;
@@ -3330,7 +3293,7 @@ nav.page-breadcrumb .breadcrumb-item.active {
 }
 
 .solution-circle {
-    width: 31.4375rem;
+    max-width: 31.4375rem;
     height: 31.4375rem;
     background: #F7E39E;
     border-radius: 50%;
@@ -3370,6 +3333,9 @@ nav.page-breadcrumb .breadcrumb-item.active {
     left: 0;
     background-size: cover;
 }
+.result-content .red-down-arrow::before{
+    background-image: url("../img/red-arrow.svg");
+}
 .result-section .about-icon {
     position: absolute;
     bottom: 0;
@@ -3382,7 +3348,13 @@ nav.page-breadcrumb .breadcrumb-item.active {
     margin-top: 2.5rem;
 }
 .client-review-section p{
-   margin-bottom: 2.25rem;
+   margin: 2.25rem 0;
+}
+.client-review-section .quotes{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .ad-section .id-img-box img{
     border: 3px solid var(--white);
